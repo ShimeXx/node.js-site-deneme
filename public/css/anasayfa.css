@@ -1,0 +1,1604 @@
+body {
+    font-family: Verdana;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+    
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+    
+  ::-webkit-scrollbar-thumb {
+    background: #58EEA6;
+  }
+    
+  ::-webkit-scrollbar-thumb:hover {
+    background: #58EEA6;
+  }
+  
+  #menü {
+  z-index: 10;
+  }
+  
+  #logo {
+      position: relative;
+      height: 5%;
+      width: 5%;
+      left: -7px;
+  }
+  
+  #bas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #58EEA6;
+      top: 13%;
+      z-index: -1;
+  }
+  
+  #basrsm {
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    top: 20%;
+    left: 57%;
+    z-index: -1;
+  }
+  
+  #basyazı1 {
+    position: absolute;
+    top: 55%;
+    left: 14%;
+    color: #ffffff;
+    font-size: 150%;
+  }
+  
+  #basyazı2 {
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    color: #ffffff;
+    font-size: 150%;
+  }
+  
+  #bttn1 {
+    position: absolute;
+    top: 67%;
+    left: 13%;
+    font-size: 120%;
+  }
+  
+  
+  #bttn2 {
+    position: absolute;
+    top: 67%;
+    left: 30%;
+    font-size: 120%;
+  }
+  
+  #yardım {
+    position: absolute;
+    top: 145%;
+    color: #ffffff;
+    left: 40%;
+    font-size: 150%;
+  }
+  
+  #yardım1 {
+    width: 13%;
+    height: 40%;
+    position: absolute;
+    top: 161%;
+    left: 35%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #yardım2 {
+    width: 23%;
+    height: 40%;
+    position: absolute;
+    top: 140%;
+    left: 10%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #müzik1 {
+    width: 30%;
+    height: 25%;
+    position: absolute;
+    left: 60%;
+    top: 230%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #müzik2 {
+    width: 25%;
+    height: 21%;
+    position: absolute;
+    left: 40%;
+    top: 260%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #müzik3 {
+    width: 27%;
+    height: 28%;
+    position: absolute;
+    left: 68%;
+    top: 260%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #müzik4 {
+    width: 18%;
+    height: 20%;
+    position: absolute;
+    left: 40%;
+    top: 235%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #müzik5 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 150%;
+    top: 250%;
+    left: 3%;
+  }
+  
+  #eglence1 {
+    width: 25%;
+    height: 22%;
+    position: absolute;
+    left: 10%;
+    top: 310%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #eglence2 {
+    width: 25%;
+    height: 22%;
+    position: absolute;
+    left: 30%;
+    top: 335%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #eglence3 {
+    width: 25%;
+    height: 22%;
+    position: absolute;
+    left: 3%;
+    top: 340%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #eglence4 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 150%;
+    top: 340%;
+    left: 60%;
+  }
+  
+  #genel1 {
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    left: 70%;
+    top: 390%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #genel2 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    left: 58%;
+    top: 434%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px black;
+  }
+  
+  #genel3 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 150%;
+    top: 410%;
+    left: 5%;
+  }
+  
+  #altmenu {
+    padding: 1%;
+    position: absolute;
+    top: 500%;
+    width: 100%;
+    height: 30%;
+    background-color: #181818;
+  }
+  
+  #altp {
+    position: absolute;
+    font-size: 150%;
+    color: #ffffff;
+    top: 502%;
+    left: 9%;
+  }
+  
+  #alta1 {
+    position: absolute;
+    font-size: 120%;
+    text-decoration: none;
+    color: #ffffff;
+    top: 508%;
+    left: 9%;
+  }
+  
+  #alta1:hover {
+    color: #c7c7c7;
+  }
+  
+  #alta2 {
+    position: absolute;
+    font-size: 120%;
+    text-decoration: none;
+    color: #ffffff;
+    top: 518%;
+    left: 9%;
+  }
+  
+  #alta2:hover {
+    color: #c7c7c7;
+  }
+  
+  #altmenü {
+    position: absolute;
+    top: 502%;
+    left: 35%;
+    color: #ffffff;
+    font-size: 150%;
+  }
+  
+  #altk {
+    position: absolute;
+    top: 508%;
+    left: 35%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  #altk:hover {
+    color: #c7c7c7;
+  }
+  
+  #alth {
+    position: absolute;
+    top: 512%;
+    left: 35%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  #alth:hover {
+    color: #c7c7c7;
+  }
+  
+  #alty {
+    position: absolute;
+    top: 516%;
+    left: 35%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  #alty:hover {
+    color: #c7c7c7;
+  }
+  
+  #altil {
+    position: absolute;
+    top: 502%;
+    left: 54%;
+    color: #ffffff;
+    font-size: 150%;
+    text-decoration: none;
+  }
+  
+  #altil1 {
+    position: absolute;
+    top: 508%;
+    left: 54%;
+    color: #ffffff;
+    font-size: 130%;
+    text-decoration: none;
+  }
+  
+  #altil1:hover {
+    color: #c7c7c7;
+  }
+  
+  #altbi {
+    position: absolute;
+    top: 502%;
+    left: 73%;
+    color: #ffffff;
+    font-size: 150%;
+    text-decoration: none;
+  }
+  
+  #altbi1 {
+    position: absolute;
+    top: 509%;
+    left: 70%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 1920px) and (min-width: 1600px) {
+  
+    #logo {
+      position: relative;
+      height: 4%;
+      width: 4%;
+      left: -7px;
+  }
+  
+  #bas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #58EEA6;
+    top: 10%;
+    z-index: -1;
+  }
+  
+  #basyazı1 {
+    position: absolute;
+    top: 55%;
+    left: 14%;
+    color: #ffffff;
+    font-size: 200%;
+  }
+  
+  #basyazı2 {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    color: #ffffff;
+    font-size: 200%;
+  }
+  
+  #bttn1 {
+    position: absolute;
+    top: 68%;
+    left: 15%;
+    font-size: 140%;
+  }
+  
+  
+  #bttn2 {
+    position: absolute;
+    top: 68%;
+    left: 28%;
+    font-size: 140%;
+  }
+  
+  #altmenu {
+    padding: 1%;
+    position: absolute;
+    top: 500%;
+    width: 100%;
+    height: 25%;
+    background-color: #181818;
+  }
+  
+  #altp {
+    position: absolute;
+    font-size: 200%;
+    color: #ffffff;
+    top: 502%;
+    left: 8%;
+  }
+  
+  #alta1 {
+    position: absolute;
+    font-size: 160%;
+    text-decoration: none;
+    color: #ffffff;
+    top: 508%;
+    left: 8%;
+  }
+  
+  #alta1:hover {
+    color: #c7c7c7;
+  }
+  
+  #alta2 {
+    position: absolute;
+    font-size: 160%;
+    text-decoration: none;
+    color: #ffffff;
+    top: 515%;
+    left: 8%;
+  }
+  
+  #alta2:hover {
+    color: #c7c7c7;
+  }
+  
+  #altmenü {
+    position: absolute;
+    top: 502%;
+    left: 33%;
+    color: #ffffff;
+    font-size: 200%;
+  }
+  
+  #altk {
+    position: absolute;
+    top: 507%;
+    left: 33%;
+    color: #ffffff;
+    font-size: 160%;
+    text-decoration: none;
+  }
+  
+  #altk:hover {
+    color: #c7c7c7;
+  }
+  
+  #alth {
+    position: absolute;
+    top: 510%;
+    left: 33%;
+    color: #ffffff;
+    font-size: 160%;
+    text-decoration: none;
+  }
+  
+  #alth:hover {
+    color: #c7c7c7;
+  }
+  
+  #alty {
+    position: absolute;
+    top: 513%;
+    left: 33%;
+    color: #ffffff;
+    font-size: 160%;
+    text-decoration: none;
+  }
+  
+  #alty:hover {
+    color: #c7c7c7;
+  }
+  
+  #altil {
+    position: absolute;
+    top: 502%;
+    left: 53%;
+    color: #ffffff;
+    font-size: 200%;
+    text-decoration: none;
+  }
+  
+  #altil1 {
+    position: absolute;
+    top: 508%;
+    left: 53%;
+    color: #ffffff;
+    font-size: 170%;
+    text-decoration: none;
+  }
+  
+  #altil1:hover {
+    color: #c7c7c7;
+  }
+  
+  #altbi {
+    position: absolute;
+    top: 502%;
+    left: 73%;
+    color: #ffffff;
+    font-size: 200%;
+    text-decoration: none;
+  }
+  
+  #altbi1 {
+    position: absolute;
+    top: 509%;
+    left: 70%;
+    color: #ffffff;
+    font-size: 160%;
+    text-decoration: none;
+  }
+  
+  }
+  
+  @media only screen and (max-width: 1150px) and (min-width: 1000px) {
+  
+    #logo {
+      position: relative;
+      height: 7%;
+      width: 7%;
+      left: -7px;
+  }
+  
+  #bas {
+      position: absolute;
+      width: 100%;
+      height: 90%;
+      background-color: #58EEA6;
+      top: 10%;
+      z-index: -1;
+  }
+  
+  #basrsm {
+    position: absolute;
+    height: 60%;
+    width: 40%;
+    top: 20%;
+    left: 57%;
+    z-index: -1;
+  }
+  
+  #basyazı1 {
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    color: #ffffff;
+    font-size: 130%;
+  }
+  
+  #basyazı2 {
+    position: absolute;
+    top: 55%;
+    left: 7%;
+    color: #ffffff;
+    font-size: 130%;
+  }
+  
+  #bttn1 {
+    position: absolute;
+    top: 64%;
+    left: 12%;
+    font-size: 120%;
+  }
+  
+  
+  #bttn2 {
+    position: absolute;
+    top: 64%;
+    left: 31%;
+    font-size: 120%;
+  }
+  
+  #müzik5 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 130%;
+    top: 250%;
+    left: 3%;
+  }
+  
+  #genel3 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 140%;
+    top: 410%;
+    left: 5%;
+  }
+  
+  #altmenu {
+    padding: 1%;
+    position: absolute;
+    top: 500%;
+    width: 100%;
+    height: 30%;
+    background-color: #181818;
+  }
+  
+  #altp {
+    position: absolute;
+    font-size: 150%;
+    color: #ffffff;
+    top: 501%;
+    left: 7%;
+  }
+  
+  #alta1 {
+    position: absolute;
+    font-size: 120%;
+    text-decoration: none;
+    color: #ffffff;
+    top: 508%;
+    left: 7%;
+  }
+  
+  #alta1:hover {
+    color: #c7c7c7;
+  }
+  
+  #alta2 {
+    position: absolute;
+    font-size: 120%;
+    text-decoration: none;
+    color: #ffffff;
+    top: 516%;
+    left: 7%;
+  }
+  
+  #alta2:hover {
+    color: #c7c7c7;
+  }
+  
+  #altmenü {
+    position: absolute;
+    top: 502%;
+    left: 33%;
+    color: #ffffff;
+    font-size: 150%;
+  }
+  
+  #altk {
+    position: absolute;
+    top: 508%;
+    left: 33%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  #altk:hover {
+    color: #c7c7c7;
+  }
+  
+  #alth {
+    position: absolute;
+    top: 511%;
+    left: 33%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  #alth:hover {
+    color: #c7c7c7;
+  }
+  
+  #alty {
+    position: absolute;
+    top: 514%;
+    left: 33%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  #alty:hover {
+    color: #c7c7c7;
+  }
+  
+  #altil {
+    position: absolute;
+    top: 502%;
+    left: 52%;
+    color: #ffffff;
+    font-size: 150%;
+    text-decoration: none;
+  }
+  
+  #altil1 {
+    position: absolute;
+    top: 508%;
+    left: 52%;
+    color: #ffffff;
+    font-size: 130%;
+    text-decoration: none;
+  }
+  
+  #altil1:hover {
+    color: #c7c7c7;
+  }
+  
+  #altbi {
+    position: absolute;
+    top: 502%;
+    left: 71%;
+    color: #ffffff;
+    font-size: 150%;
+    text-decoration: none;
+  }
+  
+  #altbi1 {
+    position: absolute;
+    top: 509%;
+    left: 68%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  }
+  
+  @media only screen and (max-width: 999px) and (min-width: 768px) {
+  
+    #logo {
+      position: relative;
+      height: 7%;
+      width: 7%;
+      left: -7px;
+  }
+  
+  #bas {
+      position: absolute;
+      width: 100%;
+      height: 90%;
+      background-color: #58EEA6;
+      top: 10%;
+      z-index: -1;
+  }
+  
+  #basrsm {
+    position: absolute;
+    height: 60%;
+    width: 40%;
+    top: 20%;
+    left: 59%;
+    z-index: -1;
+  }
+  
+  #basyazı1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #ffffff;
+    font-size: 120%;
+  }
+  
+  #basyazı2 {
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    color: #ffffff;
+    font-size: 120%;
+  }
+  
+  #bttn1 {
+    position: absolute;
+    top: 65%;
+    left: 8%;
+    font-size: 120%;
+  }
+  
+  
+  #bttn2 {
+    position: absolute;
+    top: 65%;
+    left: 33%;
+    font-size: 120%;
+  }
+  
+  #müzik5 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 110%;
+    top: 255%;
+    left: 3%;
+  }
+  
+  #genel3 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 105%;
+    top: 410%;
+    left: 2%;
+  }
+  
+  #altmenu {
+    padding: 1%;
+    position: absolute;
+    top: 491%;
+    width: 100%;
+    height: 40%;
+    background-color: #181818;
+  }
+  
+  #altp {
+    position: absolute;
+    font-size: 150%;
+    color: #ffffff;
+    top: 492%;
+    left: 5%;
+  }
+  
+  #alta1 {
+    position: absolute;
+    font-size: 120%;
+    text-decoration: none;
+    color: #ffffff;
+    top: 498%;
+    left: 5%;
+  }
+  
+  #alta1:hover {
+    color: #c7c7c7;
+  }
+  
+  #alta2 {
+    position: absolute;
+    font-size: 120%;
+    text-decoration: none;
+    color: #ffffff;
+    top: 507%;
+    left: 5%;
+  }
+  
+  #alta2:hover {
+    color: #c7c7c7;
+  }
+  
+  #altmenü {
+    position: absolute;
+    top: 492%;
+    left: 35%;
+    color: #ffffff;
+    font-size: 150%;
+  }
+  
+  #altk {
+    position: absolute;
+    top: 498%;
+    left: 35%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  #altk:hover {
+    color: #c7c7c7;
+  }
+  
+  #alth {
+    position: absolute;
+    top: 502%;
+    left: 35%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  #alth:hover {
+    color: #c7c7c7;
+  }
+  
+  #alty {
+    position: absolute;
+    top: 506%;
+    left: 35%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  
+  #alty:hover {
+    color: #c7c7c7;
+  }
+  
+  #altil {
+    position: absolute;
+    top: 492%;
+    left: 54%;
+    color: #ffffff;
+    font-size: 150%;
+    text-decoration: none;
+  }
+  
+  #altil1 {
+    position: absolute;
+    top: 498%;
+    left: 54%;
+    color: #ffffff;
+    font-size: 130%;
+    text-decoration: none;
+  }
+  
+  #altil1:hover {
+    color: #c7c7c7;
+  }
+  
+  #altbi {
+    position: absolute;
+    top: 492%;
+    left: 73%;
+    color: #ffffff;
+    font-size: 150%;
+    text-decoration: none;
+  }
+  
+  #altbi1 {
+    position: absolute;
+    top: 499%;
+    left: 70%;
+    color: #ffffff;
+    font-size: 120%;
+    text-decoration: none;
+  }
+  }
+  
+  @media only screen and (max-width: 768px) and (min-width: 600px) {
+  
+      #logo {
+          position: relative;
+          height: 7%;
+          width: 7%;
+          left: -7px;
+      }
+      
+      #bas {
+          position: absolute;
+          width: 100%;
+          height: 130%;
+          background-color: #58EEA6;
+          top: 10%;
+          z-index: -1;
+      }
+      
+      #basrsm {
+        position: absolute;
+        height: 80%;
+        width: 60%;
+        top: 20%;
+        left: 23%;
+        z-index: -1;
+      }
+      
+      #basyazı1 {
+        position: absolute;
+        top: 110%;
+        left: 23%;
+        color: #ffffff;
+        font-size: 150%;
+      }
+      
+      #basyazı2 {
+        position: absolute;
+        top: 115%;
+        left: 10%;
+        color: #ffffff;
+        font-size: 150%;
+      }
+      
+      #bttn1 {
+        position: absolute;
+        top: 125%;
+        left: 25%;
+        font-size: 120%;
+      }
+      
+      
+      #bttn2 {
+        position: absolute;
+        top: 125%;
+        left: 58%;
+        font-size: 120%;
+      }
+      
+      #yardım {
+        position: absolute;
+        top: 212%;
+        color: #ffffff;
+        left: 5%;
+        font-size: 150%;
+      }
+      
+      #yardım1 {
+        width: 13%;
+        height: 40%;
+        position: absolute;
+        top: 171%;
+        left: 35%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #yardım2 {
+        width: 23%;
+        height: 40%;
+        position: absolute;
+        top: 150%;
+        left: 10%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #müzik1 {
+        width: 30%;
+        height: 25%;
+        position: absolute;
+        left: 60%;
+        top: 240%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #müzik2 {
+        width: 25%;
+        height: 21%;
+        position: absolute;
+        left: 40%;
+        top: 270%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #müzik3 {
+        width: 27%;
+        height: 28%;
+        position: absolute;
+        left: 68%;
+        top: 270%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #müzik4 {
+        width: 18%;
+        height: 20%;
+        position: absolute;
+        left: 40%;
+        top: 245%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #müzik5 {
+        position: absolute;
+        color: #ffffff;
+        font-size: 150%;
+        top: 300%;
+        left: 3%;
+      }
+      
+      #eglence1 {
+        width: 25%;
+        height: 22%;
+        position: absolute;
+        left: 10%;
+        top: 320%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #eglence2 {
+        width: 25%;
+        height: 22%;
+        position: absolute;
+        left: 30%;
+        top: 345%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #eglence3 {
+        width: 25%;
+        height: 22%;
+        position: absolute;
+        left: 3%;
+        top: 350%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #eglence4 {
+        position: absolute;
+        color: #ffffff;
+        font-size: 150%;
+        top: 373%;
+        left: 5%;
+      }
+      
+      #genel1 {
+        width: 20%;
+        height: 40%;
+        position: absolute;
+        left: 70%;
+        top: 400%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #genel2 {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        left: 58%;
+        top: 444%;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px 1px black;
+      }
+      
+      #genel3 {
+        position: absolute;
+        color: #ffffff;
+        font-size: 150%;
+        top: 465%;
+        left: 5%;
+      }
+      
+      #altmenu {
+        padding: 1%;
+        position: absolute;
+        top: 500%;
+        width: 100%;
+        height: 55%;
+        background-color: #181818;
+      }
+      
+      #altp {
+        position: absolute;
+        font-size: 150%;
+        color: #ffffff;
+        top: 502%;
+        left: 5%;
+      }
+      
+      #alta1 {
+        position: absolute;
+        font-size: 120%;
+        text-decoration: none;
+        color: #ffffff;
+        top: 508%;
+        left: 5%;
+      }
+      
+      #alta1:hover {
+        color: #c7c7c7;
+      }
+      
+      #alta2 {
+        position: absolute;
+        font-size: 120%;
+        text-decoration: none;
+        color: #ffffff;
+        top: 518%;
+        left: 5%;
+      }
+      
+      #alta2:hover {
+        color: #c7c7c7;
+      }
+      
+      #altmenü {
+        position: absolute;
+        top: 502%;
+        left: 38%;
+        color: #ffffff;
+        font-size: 150%;
+      }
+      
+      #altk {
+        position: absolute;
+        top: 508%;
+        left: 38%;
+        color: #ffffff;
+        font-size: 120%;
+        text-decoration: none;
+      }
+      
+      #altk:hover {
+        color: #c7c7c7;
+      }
+      
+      #alth {
+        position: absolute;
+        top: 512%;
+        left: 38%;
+        color: #ffffff;
+        font-size: 120%;
+        text-decoration: none;
+      }
+      
+      #alth:hover {
+        color: #c7c7c7;
+      }
+      
+      #alty {
+        position: absolute;
+        top: 516%;
+        left: 38%;
+        color: #ffffff;
+        font-size: 120%;
+        text-decoration: none;
+      }
+      
+      #alty:hover {
+        color: #c7c7c7;
+      }
+      
+      #altil {
+        position: absolute;
+        top: 502%;
+        left: 55%;
+        color: #ffffff;
+        font-size: 150%;
+        text-decoration: none;
+      }
+      
+      #altil1 {
+        position: absolute;
+        top: 508%;
+        left: 55%;
+        color: #ffffff;
+        font-size: 130%;
+        text-decoration: none;
+      }
+      
+      #altil1:hover {
+        color: #c7c7c7;
+      }
+      
+      #altbi {
+        position: absolute;
+        top: 502%;
+        left: 73%;
+        color: #ffffff;
+        font-size: 150%;
+        text-decoration: none;
+      }
+      
+      #altbi1 {
+        position: absolute;
+        top: 509%;
+        left: 73%;
+        color: #ffffff;
+        font-size: 120%;
+        text-decoration: none;
+      }
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+    #logo {
+        position: relative;
+        height: 9%;
+        width: 9%;
+        left: -7px;
+    }
+    
+    #bas {
+        position: absolute;
+        width: 100%;
+        height: 150%;
+        background-color: #58EEA6;
+        top: 10%;
+        z-index: -1;
+    }
+    
+    #basrsm {
+      position: absolute;
+      height: 70%;
+      width: 80%;
+      top: 20%;
+      left: 12%;
+      z-index: -1;
+    }
+    
+    #basyazı1 {
+      position: absolute;
+      top: 110%;
+      left: 8%;
+      color: #ffffff;
+      font-size: 150%;
+    }
+    
+    #basyazı2 {
+      position: absolute;
+      top: 115%;
+      left: 15%;
+      color: #ffffff;
+      font-size: 150%;
+    }
+    
+    #bttn1 {
+      position: absolute;
+      top: 135%;
+      left: 5%;
+      font-size: 120%;
+    }
+    
+    
+    #bttn2 {
+      position: absolute;
+      top: 135%;
+      left: 53%;
+      font-size: 120%;
+    }
+    
+    #yardım {
+      position: absolute;
+      top: 227%;
+      color: #ffffff;
+      left: 5%;
+      font-size: 150%;
+    }
+    
+    #yardım1 {
+      width: 30%;
+      height: 40%;
+      position: absolute;
+      top: 186%;
+      left: 55%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #yardım2 {
+      width: 40%;
+      height: 40%;
+      position: absolute;
+      top: 165%;
+      left: 10%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #müzik1 {
+      width: 45%;
+      height: 25%;
+      position: absolute;
+      left: 50%;
+      top: 255%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #müzik2 {
+      width: 30%;
+      height: 21%;
+      position: absolute;
+      left: 26%;
+      top: 285%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #müzik3 {
+      width: 35%;
+      height: 28%;
+      position: absolute;
+      left: 58%;
+      top: 285%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #müzik4 {
+      width: 28%;
+      height: 20%;
+      position: absolute;
+      left: 20%;
+      top: 260%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #müzik5 {
+      position: absolute;
+      color: #ffffff;
+      font-size: 150%;
+      top: 315%;
+      left: 3%;
+    }
+    
+    #eglence1 {
+      width: 35%;
+      height: 22%;
+      position: absolute;
+      left: 10%;
+      top: 335%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #eglence2 {
+      width: 35%;
+      height: 22%;
+      position: absolute;
+      left: 40%;
+      top: 360%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #eglence3 {
+      width: 35%;
+      height: 22%;
+      position: absolute;
+      left: 3%;
+      top: 365%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #eglence4 {
+      position: absolute;
+      color: #ffffff;
+      font-size: 150%;
+      top: 388%;
+      left: 5%;
+    }
+    
+    #genel1 {
+      width: 30%;
+      height: 40%;
+      position: absolute;
+      left: 60%;
+      top: 415%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #genel2 {
+      width: 30%;
+      height: 20%;
+      position: absolute;
+      left: 48%;
+      top: 459%;
+      border-radius: 10px;
+      box-shadow: 1px 2px 5px 1px black;
+    }
+    
+    #genel3 {
+      position: absolute;
+      color: #ffffff;
+      font-size: 150%;
+      top: 480%;
+      left: 5%;
+    }
+    
+    #altmenu {
+      padding: 1%;
+      position: absolute;
+      top: 500%;
+      width: 100%;
+      height: 100%;
+      background-color: #181818;
+    }
+    
+    #altp {
+      position: absolute;
+      font-size: 150%;
+      color: #ffffff;
+      top: 502%;
+      left: 5%;
+    }
+    
+    #alta1 {
+      position: absolute;
+      font-size: 120%;
+      text-decoration: none;
+      color: #ffffff;
+      top: 508%;
+      left: 5%;
+    }
+    
+    #alta1:hover {
+      color: #c7c7c7;
+    }
+    
+    #alta2 {
+      position: absolute;
+      font-size: 120%;
+      text-decoration: none;
+      color: #ffffff;
+      top: 518%;
+      left: 5%;
+    }
+    
+    #alta2:hover {
+      color: #c7c7c7;
+    }
+    
+    #altmenü {
+      position: absolute;
+      top: 502%;
+      left: 65%;
+      color: #ffffff;
+      font-size: 150%;
+    }
+    
+    #altk {
+      position: absolute;
+      top: 508%;
+      left: 65%;
+      color: #ffffff;
+      font-size: 120%;
+      text-decoration: none;
+    }
+    
+    #altk:hover {
+      color: #c7c7c7;
+    }
+    
+    #alth {
+      position: absolute;
+      top: 512%;
+      left: 65%;
+      color: #ffffff;
+      font-size: 120%;
+      text-decoration: none;
+    }
+    
+    #alth:hover {
+      color: #c7c7c7;
+    }
+    
+    #alty {
+      position: absolute;
+      top: 516%;
+      left: 65%;
+      color: #ffffff;
+      font-size: 120%;
+      text-decoration: none;
+    }
+    
+    #alty:hover {
+      color: #c7c7c7;
+    }
+    
+    #altil {
+      position: absolute;
+      top: 570%;
+      left: 5%;
+      color: #ffffff;
+      font-size: 150%;
+      text-decoration: none;
+    }
+    
+    #altil1 {
+      position: absolute;
+      top: 577%;
+      left: 5%;
+      color: #ffffff;
+      font-size: 130%;
+      text-decoration: none;
+    }
+    
+    #altil1:hover {
+      color: #c7c7c7;
+    }
+    
+    #altbi {
+      position: absolute;
+      top: 540%;
+      left: 5%;
+      color: #ffffff;
+      font-size: 150%;
+      text-decoration: none;
+    }
+    
+    #altbi1 {
+      position: absolute;
+      top: 548%;
+      left: 5%;
+      color: #ffffff;
+      font-size: 120%;
+      text-decoration: none;
+    }
+  }

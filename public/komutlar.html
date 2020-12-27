@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" id="iconik" href="https://cdn.discordapp.com/attachments/694513976247320589/792722486188834826/shortcuticon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/komutlar.css">
+      <meta name="description" content="ShimeX Discord Bot'u hakkında bilgiler alabileceğiniz,komutları öğrenebileceğiniz ShimeX bot orjinal websitesidir.">
+    <meta name="keywords" content="ShimeX,Shimex,shimex,ShimeX bot,shimex bot,ShimeX Bot,Discord,Shimex discord,discord botu,discord müzik botu, müzik botu">
+    <script src="js/komutlar.js"></script>
+    <title>ShimeX</title>
+</head>
+<body class="bg-dark" id="menü">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="https://cdn.discordapp.com/attachments/694513976247320589/787049663568019506/logo.jpg" class="rounded-circle" id="logo" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="index.html">Ana sayfa</a>
+              <a class="nav-link" href="#">Komutlar</a>
+              <a class="nav-link" href="hakkımda.html">Hakkımda</a>
+              <a class="nav-link" href="yenilikler.html" tabindex="-1" aria-disabled="true">Yenilikler</a>
+              <a class="nav-link" href="https://www.patreon.com/shimex">Bağış</a>
+              <a class="nav-link" href="https://top.gg/bot/692099592711438376">Bota Oy ver</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<div id="kategoriarka"></div>
+<p id="kateg">Kategoriler</p>
+<div id="muzik">
+<a href="#" id="katemuzik" onclick="muzikt()">Müzik</a>
+<div id="muziksler">
+ <div class="accordion" id="accordionExample">
+   <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+       <button class="accordion-button text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         /çal veya /p
+       </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       Kullanımı: /p müzik isimi <br>
+<br>
+        girdiğiniz müzik ismini youtube'da arar ve çalar.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        /geç
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Kullanımı: /geç <br>
+        <br>
+         Sıradaki Müziğe Geçer.    
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        /durdur
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Kullanımı: /durdur <br>
+        <br>
+                Müziği durdurur ve kanaldan çıkar.
+      </div>
+     </div>
+   </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        /ses
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Kullanımı: /ses 0-200 arasında bir ses seviyesi <br>
+        <br>
+                Müziğin ses seviyesini belirlenen ses seviyesine ayarlar.
+      </div>
+     </div>
+   </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        /sıra
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Kullanımı: /sıra <br>
+        <br>
+                Çalan müziği ve sıradaki müzikleri gösterir.
+      </div>
+     </div>
+   </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        /duraklat
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Kullanımı: /duraklat <br>
+        <br>
+                Şarkıyı duraklatır ama kanaldan çıkmaz.
+      </div>
+     </div>
+   </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSeven">
+      <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        /devam
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Kullanımı: /devam <br>
+        <br>
+                Duraklatılan şarkıyı devam ettirir.
+      </div>
+     </div>
+   </div>
+ </div>
+</div>      
+</div>
+
+<div id="genel">
+  <a href="#" id="kategenel" onclick="genelt()">Genel</a>
+  <div id="genelsler">
+   <div class="accordion" id="accordionExample">
+     <div class="accordion-item">
+       <h2 class="accordion-header" id="headingOne">
+         <button class="accordion-button text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           /bilgi
+         </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+         Kullanımı: /bilgi <br>
+  <br>
+          bot hakkında bilgi verir.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          /yaz
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Kullanımı: /yaz yazdırıcağınız kelime <br>
+          <br>
+           Bota birşeyler yazdırırsınız.    
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          /servericon
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Kullanımı: /servericon <br>
+          <br>
+                  server iconunu gösterir.
+        </div>
+       </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          /iconum
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Kullanımı: /iconum <br>
+          <br>
+                  profil fotoğrafınızı gösterir.
+        </div>
+       </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          /kullanıcıbilgim
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Kullanımı: /kullanıcıbilgim <br>
+          <br>
+                 Discord hesabınız hakkında bilgi verir.
+        </div>
+       </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          /ping
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Kullanımı: /ping <br>
+          <br>
+                  Botun pingini gösterir.
+        </div>
+       </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSeven">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          /yazıtura
+        </button>
+      </h2>
+      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Kullanımı: /yazıtura <br>
+          <br>
+                  yazı tura atarsınız.
+        </div>
+       </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEight">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          /komutsayısı
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Kullanımı: /komutsayısı <br>
+          <br>
+                  Kaç komut olduğunu söyler.
+        </div>
+       </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingNine">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          /website
+        </button>
+      </h2>
+      <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Kullanımı: /website <br>
+          <br>
+                  websiteye yönlendirir.
+        </div>
+       </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTen">
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          /kaçıklama
+        </button>
+      </h2>
+      <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Kullanımı: /kaçıklama <br>
+          <br>
+                  kanal açıklamasını değiştirirsiniz.
+        </div>
+       </div>
+     </div>
+   </div>
+  </div>      
+  </div>
+
+  <div id="egelence">
+    <a href="#" id="kateglen" onclick="egelencet()">Eğlence</a>
+    <div id="egelencesler">
+     <div class="accordion" id="accordionExample">
+       <div class="accordion-item">
+         <h2 class="accordion-header" id="headingOne">
+           <button class="accordion-button text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             /kedi
+           </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+           Kullanımı: /kedi <br>
+    <br>
+            Rastgele kedi gifi atar.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            /nahçek
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /nahçek @kişi <br>
+            <br>
+              Etiketlediğiniz kişiye nah çekersiniz.    
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            /kaçcm
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /kaçcm <br>
+            <br>
+              Kaç santim?.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            /aşkölç
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /aşkölç @kişi <br>
+            <br>
+              Aşkınızı ölçersiniz.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            /yarraa
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /yarraa <br>
+            <br>
+              Beter ali.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            /okay
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /okay <br>
+            <br>
+              Ok gif.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            /kıymetlimizz
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /kıymetlimizz <br>
+            <br>
+              Gollum gif.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            /stresçarkı
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /stresçarkı <br>
+            <br>
+              Sizin için stres çarkı çevirir.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            /espri
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /espri <br>
+            <br>
+              Sizin için kötü bir espri yapar.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTen">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            /nezaman
+          </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /nezaman dilediğiniz şey <br>
+            <br>
+              Ne diledin?.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEleven">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            /gusül
+          </button>
+        </h2>
+        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /gusül <br>
+            <br>
+                    Resimli olarak gusül almayı öğretir.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwelve">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+            /gerigelsin
+          </button>
+        </h2>
+        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /gerigelsin <br>
+            <br>
+                    Gelirmi be abi.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThirteen">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+            /Başaramadıkabi
+          </button>
+        </h2>
+        <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /başaramadıkabi <br>
+            <br>
+                    neyi başaramadın...
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFourteen">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+            /nudeat
+          </button>
+        </h2>
+        <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /nudeat <br>
+            <br>
+                    nude atar.
+          </div>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFifteen">
+          <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+            /iq
+          </button>
+        </h2>
+        <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Kullanımı: /iq <br>
+            <br>
+                    iq ölçer.
+          </div>
+         </div>
+       </div>
+     </div>
+    </div>      
+    </div>
+
+     <div id="altmenu"></div>
+     <p id="altp">ShimeX</p>
+     <a href="" id="alta1">Botun Sunucusuna <br>Girmek için</a>
+     <a href="" id="alta2">Botu Sunucuna <br>Davet etmek için</a>
+     <p id="altmenü">menü</p>
+     <a href="index.html" id="altk">Ana Sayfa</a>
+     <a href="hakkımda.html" id="alth">Hakkımda</a>
+     <a href="yenilikler.html" id="alty">Yenilikler</a>
+     <p id="altil">İletişim</p>
+     <a href="" id="altil1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+    </svg>Twitter</a>
+     <p id="altbi">Bilgilendirme</p>
+     <p id="altbi1">Discord Sunucumuza Gelerek <br>bot hakkında düşüncelerinizi ve <br>isteklerinizi iletebilirsiniz.</p>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
